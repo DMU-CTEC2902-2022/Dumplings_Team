@@ -1,0 +1,50 @@
+﻿@model ITC_website.Models.Staff
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Staff</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.StaffName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.StaffName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.StaffEmail)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.StaffEmail)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.StaffModule)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.StaffModule)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.StaffId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
