@@ -128,12 +128,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ModulesController.cs" />
     <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Data\CourseContext.cs" />
+    <Compile Include="Data\ModuleContext.cs" />
     <Compile Include="Data\StaffContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ITC.Data.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Module.cs" />
     <Compile Include="Models\Staff.cs" />
@@ -185,6 +188,11 @@
     <Content Include="Views\Staffs\Details.cshtml" />
     <Content Include="Views\Staffs\Edit.cshtml" />
     <Content Include="Views\Staffs\Index.cshtml" />
+    <Content Include="Views\Modules\Create.cshtml" />
+    <Content Include="Views\Modules\Delete.cshtml" />
+    <Content Include="Views\Modules\Details.cshtml" />
+    <Content Include="Views\Modules\Edit.cshtml" />
+    <Content Include="Views\Modules\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
