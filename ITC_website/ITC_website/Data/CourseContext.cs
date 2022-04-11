@@ -19,6 +19,8 @@ namespace ITC_website.Data
         {
         }
 
+
         public System.Data.Entity.DbSet<ITC_website.Models.Course> Courses { get; set; }
+        public System.Data.Entity.DbSet<ITC_website.Models.Module> Modules { get; set; }
     }
 }
