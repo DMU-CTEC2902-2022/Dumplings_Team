@@ -11,6 +11,7 @@ namespace ITC_website.Models
         public virtual string ModuleCode { get; set; }
         public virtual string ModuleDescription { get; set; }
         public virtual string ModuleTitle { get; set; }
-        
+        public virtual Course course { get; set; }
+        public virtual int CourseId { get; set; }
     }
 }

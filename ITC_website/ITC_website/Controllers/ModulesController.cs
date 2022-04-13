@@ -16,9 +16,19 @@ namespace ITC_website.Controllers
         private ModuleContext db = new ModuleContext();
 
         // GET: Modules
-        public ActionResult Index()
+        public ActionResult Index(int? id)
         {
-            return View(db.Modules.ToList());
+            List<Module> moduleList;
+            var modules = db.Modules.Include(g => g.course);
+            if (id != null)
+                moduleList = modules.ToList().FindAll(p => p.CourseId == id); // retrieve
+            
+            else moduleList = modules.ToList(); // Retrieve all games
+            if (moduleList.Count() == 0)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            return View(moduleList);
         }
 
         // GET: Modules/Details/5
