@@ -38,6 +38,7 @@ namespace ITC_website.Models
             mod1.ModuleCode = "COS1903";
             mod1.ModuleTitle = "Scala Programming";
             mod1.ModuleDescription = "...";
+            mod1.course = cur1;
             context.Modules.Add(mod1);
 
             ITC_website.Models.Module mod2 = new ITC_website.Models.Module();
@@ -45,6 +46,7 @@ namespace ITC_website.Models
             mod2.ModuleCode = "COS1920";
             mod2.ModuleTitle = "Database Management";
             mod2.ModuleDescription = "...";
+            mod2.course = cur1;
             context.Modules.Add(mod2);
 
 
@@ -53,6 +55,7 @@ namespace ITC_website.Models
             mod3.ModuleCode = "COS2905";
             mod3.ModuleTitle = "Object Oriented Programming (Java)";
             mod3.ModuleDescription = "...";
+            mod3.course = cur1;
             context.Modules.Add(mod3);
 
 
@@ -61,6 +64,7 @@ namespace ITC_website.Models
             mod4.ModuleCode = "COS2910";
             mod4.ModuleTitle = "Database Management";
             mod4.ModuleDescription = "...";
+            mod4.course = cur1;
             context.Modules.Add(mod4);
 
             ITC_website.Models.Module mod5 = new ITC_website.Models.Module();
@@ -68,6 +72,7 @@ namespace ITC_website.Models
             mod5.ModuleCode = "COS3911";
             mod5.ModuleTitle = "Mobile Application";
             mod5.ModuleDescription = "...";
+            mod5.course = cur1;
             context.Modules.Add(mod5);
 
 
@@ -76,6 +81,7 @@ namespace ITC_website.Models
             mod6.ModuleCode = "IMAT3611";
             mod6.ModuleTitle = "Computer Ethics and Privacy";
             mod6.ModuleDescription = "...";
+            mod6.course = cur1;
             context.Modules.Add(mod6);
 
 
@@ -84,6 +90,7 @@ namespace ITC_website.Models
             mod7.ModuleCode = "COS3451";
             mod7.ModuleTitle = "Development Project";
             mod7.ModuleDescription = "...";
+            mod7.course = cur1;
             context.Modules.Add(mod7);
 
             ITC_website.Models.Module mod8 = new ITC_website.Models.Module();
@@ -91,6 +98,7 @@ namespace ITC_website.Models
             mod8.ModuleCode = "SE3906";
             mod8.ModuleTitle = "Interaction Design";
             mod8.ModuleDescription = "...";
+            mod8.course = cur2;
             context.Modules.Add(mod8);
 
 
@@ -99,6 +107,7 @@ namespace ITC_website.Models
             mod9.ModuleCode = "SE3410";
             mod9.ModuleTitle = "Web Application Penetration Testing";
             mod9.ModuleDescription = "...";
+            mod9.course = cur2;
             context.Modules.Add(mod9);
 
 
@@ -107,6 +116,7 @@ namespace ITC_website.Models
             mod10.ModuleCode = "SE3406";
             mod10.ModuleTitle = "Fuzzy Logic & Knowledge Based Systems";
             mod10.ModuleDescription = "...";
+            mod10.course = cur2;
             context.Modules.Add(mod10);
 
 
@@ -115,6 +125,7 @@ namespace ITC_website.Models
             mod11.ModuleCode = "SE3613";
             mod11.ModuleTitle = "Data Mining";
             mod11.ModuleDescription = "...";
+            mod11.course = cur2;
             context.Modules.Add(mod11);
 
 
@@ -123,6 +134,7 @@ namespace ITC_website.Models
             mod12.ModuleCode = "SE3614";
             mod12.ModuleTitle = "Big Data & Business Models";
             mod12.ModuleDescription = "...";
+            mod12.course = cur2;
             context.Modules.Add(mod12);
 
 
@@ -131,6 +143,7 @@ namespace ITC_website.Models
             mod13.ModuleCode = "SE3901";
             mod13.ModuleTitle = "C Programming";
             mod13.ModuleDescription = "...";
+            mod13.course = cur3;
             context.Modules.Add(mod13);
 
 
@@ -139,6 +152,7 @@ namespace ITC_website.Models
             mod14.ModuleCode = "SE3902";
             mod14.ModuleTitle = "Computer Law and Cyber Security Management";
             mod14.ModuleDescription = "...";
+            mod14.course = cur3;
             context.Modules.Add(mod14);
 
 
@@ -147,6 +161,7 @@ namespace ITC_website.Models
             mod15.ModuleCode = "SE3903";
             mod15.ModuleTitle = "Linux Security";
             mod15.ModuleDescription = "...";
+            mod15.course = cur3;
             context.Modules.Add(mod15);
 
 
@@ -155,6 +170,7 @@ namespace ITC_website.Models
             mod16.ModuleCode = "SE3904";
             mod16.ModuleTitle = "Cyber Threat Intelligence and Incident Response";
             mod16.ModuleDescription = "...";
+            mod16.course = cur3;
             context.Modules.Add(mod16);
 
 
@@ -163,6 +179,7 @@ namespace ITC_website.Models
             mod17.ModuleCode = "3905";
             mod17.ModuleTitle = "Malware Analysis";
             mod17.ModuleDescription = "...";
+            mod17.course = cur3;
             context.Modules.Add(mod17);
 
 
