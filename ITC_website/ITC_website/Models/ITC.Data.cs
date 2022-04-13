@@ -7,9 +7,9 @@ using System.Web;
 
 namespace ITC_website.Models
 {
-    public class ITCDataInitialiser : DropCreateDatabaseAlways<CourseContext>
+    public class ITCDataInitialiser : DropCreateDatabaseAlways<ModuleContext>
     {
-        protected override void Seed(CourseContext context)
+        protected override void Seed(ModuleContext context)
         {   
             //........COURSES DATABASE...................///////
             ITC_website.Models.Course cur1 = new ITC_website.Models.Course();
