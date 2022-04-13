@@ -15,19 +15,19 @@ namespace ITC_website.Models
             ITC_website.Models.Course cur1 = new ITC_website.Models.Course();
             cur1.CourseId = 1;
             cur1.CourseName = "ComputerScience";
-            cur1.CurseDescription = "...";
+            cur1.CourseDescription = "...";
             context.Courses.Add(cur1);
 
             ITC_website.Models.Course cur2 = new ITC_website.Models.Course();
             cur2.CourseId = 2;
             cur2.CourseName = "Software Engineering";
-            cur2.CurseDescription = "...";
+            cur2.CourseDescription = "...";
             context.Courses.Add(cur2);
 
             ITC_website.Models.Course cur3 = new ITC_website.Models.Course();
             cur3.CourseId = 3;
             cur3.CourseName = "Cyber Security";
-            cur3.CurseDescription = "...";
+            cur3.CourseDescription = "...";
             context.Courses.Add(cur3);
 
 
@@ -176,11 +176,43 @@ namespace ITC_website.Models
 
             ITC_website.Models.Module mod17 = new ITC_website.Models.Module();
             mod17.ModuleId = 17;
-            mod17.ModuleCode = "3905";
+            mod17.ModuleCode = "SE3905";
             mod17.ModuleTitle = "Malware Analysis";
             mod17.ModuleDescription = "...";
             mod17.course = cur3;
             context.Modules.Add(mod17);
+
+            ITC_website.Models.Module mod18 = new ITC_website.Models.Module();
+            mod18.ModuleId = 18;
+            mod18.ModuleCode = "IMAT3611";
+            mod18.ModuleTitle = "Computer Ethics and Privacy";
+            mod18.ModuleDescription = "...";
+            mod18.course = cur2;
+            context.Modules.Add(mod18);
+
+            ITC_website.Models.Module mod19 = new ITC_website.Models.Module();
+            mod19.ModuleId = 19;
+            mod19.ModuleCode = "IMAT3611";
+            mod19.ModuleTitle = "Computer Ethics and Privacy";
+            mod19.ModuleDescription = "...";
+            mod19.course = cur3;
+            context.Modules.Add(mod19);
+
+            ITC_website.Models.Module mod20 = new ITC_website.Models.Module();
+            mod20.ModuleId = 20;
+            mod20.ModuleCode = "COS3451";
+            mod20.ModuleTitle = "Development Project";
+            mod20.ModuleDescription = "...";
+            mod20.course = cur2;
+            context.Modules.Add(mod20);
+
+            ITC_website.Models.Module mod21 = new ITC_website.Models.Module();
+            mod21.ModuleId = 21;
+            mod21.ModuleCode = "COS3451";
+            mod21.ModuleTitle = "Development Project";
+            mod21.ModuleDescription = "...";
+            mod21.course = cur3;
+            context.Modules.Add(mod21);
 
 
             base.Seed(context);

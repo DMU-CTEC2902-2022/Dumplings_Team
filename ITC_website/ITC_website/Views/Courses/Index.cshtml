@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Courses</title>
 </head>
 <body>
     <p>
@@ -21,7 +21,7 @@
                 @Html.DisplayNameFor(model => model.CourseName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CurseDescription)
+                @Html.DisplayNameFor(model => model.CourseDescription)
             </th>
             <th></th>
         </tr>
@@ -32,7 +32,7 @@
                 @Html.DisplayFor(modelItem => item.CourseName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CurseDescription)
+                @Html.DisplayFor(modelItem => item.CourseDescription)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.CourseId }) |

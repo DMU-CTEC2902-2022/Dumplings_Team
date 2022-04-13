@@ -9,7 +9,7 @@ namespace ITC_website.Models
     {
         public virtual int CourseId { get; set; }
         public virtual string CourseName { get; set; }
-        public virtual string CurseDescription { get; set; }
+        public virtual string CourseDescription { get; set; }
 
     }
 }
