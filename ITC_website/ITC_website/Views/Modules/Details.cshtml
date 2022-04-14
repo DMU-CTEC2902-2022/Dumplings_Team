@@ -9,42 +9,44 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <title>Details</title>
 </head>
 <body>
-    <div>
+    <div class="center">
         <h4>Module</h4>
         <hr />
         <dl class="dl-horizontal">
             <dt>
                 @Html.DisplayNameFor(model => model.ModuleTitle)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.ModuleTitle)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.ModuleDescription)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.ModuleDescription)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.ModuleCode)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.ModuleCode)
             </dd>
-    
+
         </dl>
+
+        <p>
+            @*@Html.ActionLink("Edit", "Edit", new { id = Model.ModuleId }) |*@
+            @Html.ActionLink("Back to List", "Index")
+        </p>
     </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.ModuleId }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
 </body>
 </html>
