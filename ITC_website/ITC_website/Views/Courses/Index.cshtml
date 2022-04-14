@@ -9,39 +9,43 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <title>Courses</title>
 </head>
 <body>
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @*@Html.ActionLink("Create New", "Create")*@
     </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.CourseName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CourseDescription)
-            </th>
-            <th></th>
-        </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseDescription)
-            </td>
-            <td>
-                @*@Html.ActionLink("Edit", "Edit", new { id = item.CourseId }) |*@
-                @Html.ActionLink("Details", "../Modules/Index", new { id = item.CourseId }) 
-                @*@Html.ActionLink("Delete", "Delete", new { id=item.CourseId })*@
-            </td>
-        </tr>
-    }
-    
-    </table>
+    <div class="center">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CourseName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CourseDescription)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CourseName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CourseDescription)
+                    </td>
+                    <td>
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.CourseId }) |*@
+                        @Html.ActionLink("Details", "../Modules/Index", new { id = item.CourseId })
+                        @*@Html.ActionLink("Delete", "Delete", new { id=item.CourseId })*@
+                    </td>
+                </tr>
+            }
+
+        </table>
+     </div>
 </body>
 </html>
